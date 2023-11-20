@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Errors</title>
+</head>
+<body>
+  <script>
+    // example 1
+      // const a = "Hello";
+      // const b = "World";
+      // console.log(c);
+        //output: Uncaught ReferenceError: c is not defined
+        // at errors.html:13:17
+
+
+    // example 2
+      // const a = 5;
+      // const b = 10;
+
+      // function add() {
+      //   return c;
+      // }
+
+      // function print() {
+      //   add();
+      // }
+
+      // print();
+        // output: Uncaught ReferenceError: c is not defined
+        // at add (errors.html:22:7)
+        // at print (errors.html:26:7)
+        // at errors.html:29:17
+
+
+    // example 3
+      // function helloWorld() {
+      //   console.log "Hello World!"
+      // }
+        // output: errors.html:39 Uncaught SyntaxError: Unexpected string (at errors.html:39:19)
+
+
+    // example 4
+      const str1 = "Hello";
+      const str2 = "World!";
+      const message = str1.push(str2);
+        // output: Uncaught TypeError: str1.push is not a function
+        // at errors.html:47:26
+  </script>
+</body>
+</html>
