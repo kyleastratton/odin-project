@@ -18,15 +18,19 @@ h3.textContent = "Hey, I am blue!"
 h3.style.color = "blue";
 container.appendChild(h3);
 
- 
+
+ // create div 
 const newDiv = document.createElement('div');
 
+// create heading, add content, and append to new div
 const heading = document.createElement('h1');
 heading.textContent = "I'm in a div"
 newDiv.appendChild(heading)
 
+// create paragraph, add content, and append to new div
 const paragraph = document.createElement('p');
 paragraph.textContent = "ME TOO!"
 newDiv.appendChild(paragraph)
 
+// append new div to container
 container.appendChild(newDiv)
